@@ -18,8 +18,8 @@ const images = [
 const imageList = document.querySelector('.gallery')
 imageList.classList.add('designe')
 
-const markup = images.map(({ url, alt }) => `<li><img src=${url} alt=${alt} width=500px></li>`).join('');
-
+const markup = images.map(({ url, alt }) => `<li><img src=${url} alt="${alt}" width=500px></li>`).join('');
+console.log(markup);
 imageList.insertAdjacentHTML('afterbegin', markup)
 
 console.log(imageList);
